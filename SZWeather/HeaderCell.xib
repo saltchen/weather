@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="headerCell" rowHeight="170" id="KGk-i7-Jjw" customClass="HeaderCell" customModule="SZWeather" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="415" height="170"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="415" height="169"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="958-I6-qRZ">
+                        <rect key="frame" x="0.0" y="0.0" width="415" height="169"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="城市名称简称" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zCE-fY-iTq">
+                                <rect key="frame" x="0.0" y="0.0" width="415" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="天气状况" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T3p-3m-N09">
+                                <rect key="frame" x="0.0" y="42" width="415" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jvq-zF-8tO">
+                                <rect key="frame" x="0.0" y="70" width="415" height="99"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="958-I6-qRZ" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" id="5VJ-Kz-WkN"/>
+                    <constraint firstItem="958-I6-qRZ" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" id="QeH-S8-GSX"/>
+                    <constraint firstItem="958-I6-qRZ" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Vqd-9Z-gwB"/>
+                    <constraint firstItem="958-I6-qRZ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="hIc-QG-3s7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="labelCity" destination="zCE-fY-iTq" id="2A1-0k-kM0"/>
+                <outlet property="labelTemp" destination="jvq-zF-8tO" id="oDB-o7-Ee9"/>
+                <outlet property="labelWeather" destination="T3p-3m-N09" id="4bW-Py-Eim"/>
+            </connections>
+            <point key="canvasLocation" x="392.5" y="299"/>
+        </tableViewCell>
+    </objects>
+</document>
